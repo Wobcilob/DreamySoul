@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DreamySoul/1.0.0": {
+        "runtime": {
+          "DreamySoul.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DreamySoul/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

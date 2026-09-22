@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace DreamySoul
+{
+    public class DreamySoul : Mod
+    {
+        public static RecipeGroup AnyCopperTin;
+        public static RecipeGroup AnyIronLead;
+        public static RecipeGroup AnySilverTungsten;
+        public static RecipeGroup AnyGoldPlatinum;
+        public static RecipeGroup AnyCobaltPalladium;
+        public static RecipeGroup AnyMythrilOrichalcum;
+        public static RecipeGroup AnyAdamantiteTitanium;
+        public static RecipeGroup AnyAdamantiteForgeTitaniumForge;
+        [Obsolete]
+        public override void AddRecipeGroups()
+        {
+            AnyCopperTin = new RecipeGroup(() => "铜锭或锡锭", ItemID.CopperBar, ItemID.TinBar);
+            RecipeGroup.RegisterGroup("DreamySoul:AnyCopperTin", AnyCopperTin);
+            AnyIronLead = new RecipeGroup(() => "铁锭或铅锭", ItemID.IronBar, ItemID.LeadBar);
+            RecipeGroup.RegisterGroup("DreamySoul:AnyIronLead", AnyIronLead);
+            AnySilverTungsten = new RecipeGroup(() => "银锭或钨锭", ItemID.SilverBar, ItemID.TungstenBar);
+            RecipeGroup.RegisterGroup("DreamySoul:AnySilverTungsten", AnySilverTungsten);
+            AnyGoldPlatinum = new RecipeGroup(() => "金锭或铂金锭", ItemID.GoldBar, ItemID.PlatinumBar);
+            RecipeGroup.RegisterGroup("DreamySoul:AnyGoldPlatinum", AnyGoldPlatinum);
+            AnyCobaltPalladium = new RecipeGroup(() => "钴锭或钯金锭", ItemID.CobaltBar, ItemID.PalladiumBar);
+            RecipeGroup.RegisterGroup("DreamySoul:AnyCobaltPalladium", AnyCobaltPalladium);
+            AnyMythrilOrichalcum = new RecipeGroup(() => "秘银锭或山铜锭", ItemID.MythrilBar, ItemID.OrichalcumBar);
+            RecipeGroup.RegisterGroup("DreamySoul:AnyMythrilOrichalcum", AnyMythrilOrichalcum);
+            AnyAdamantiteTitanium = new RecipeGroup(() => "精金锭或钛金锭", ItemID.AdamantiteBar, ItemID.TitaniumBar);
+            RecipeGroup.RegisterGroup("DreamySoul:AnyAdamantiteTitanium", AnyAdamantiteTitanium);
+            AnyAdamantiteForgeTitaniumForge = new RecipeGroup(() => "精金熔炉或钛金熔炉", ItemID.AdamantiteForge, ItemID.TitaniumForge);
+            RecipeGroup.RegisterGroup("DreamySoul:AnyAdamantiteForgeTitaniumForge", AnyAdamantiteForgeTitaniumForge);
+        }
+    }
+}

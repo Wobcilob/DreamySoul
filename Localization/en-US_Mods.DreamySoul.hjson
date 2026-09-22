@@ -1,0 +1,48 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	Sword: {
+		DisplayName: Sword
+		Tooltip:
+			'''
+			Template of an item
+			Replacing this tooltip is duty 
+			It's snowing on Mt.Fuji
+			'''
+	}
+
+	合金短刀: {
+		DisplayName: 合金短刀
+		Tooltip: ""
+	}
+
+	浓缩合金: {
+		DisplayName: 浓缩合金
+		Tooltip: ""
+	}
+
+	test: {
+		DisplayName: test
+		Tooltip: ""
+	}
+
+	死亡之魂: {
+		DisplayName: 死亡之魂
+		Tooltip: ""
+	}
+
+	凝取机: {
+		DisplayName: 凝取机
+		Tooltip: ""
+	}
+
+	Test: {
+		DisplayName: Test
+		Tooltip: ""
+	}
+}
+
+Projectiles: {
+	DeathSoulProjectile.DisplayName: Death Soul Projectile
+	合金短刀刺击.DisplayName: 合金短刀刺击
+}

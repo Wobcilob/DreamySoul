@@ -10,3 +10,4 @@ C:\Users\28499\Documents\My Games\Terraria\tModLoader\ModSources\DreamySoul\obj\
 C:\Users\28499\Documents\My Games\Terraria\tModLoader\ModSources\DreamySoul\obj\Debug\net8.0\refint\DreamySoul.dll
 C:\Users\28499\Documents\My Games\Terraria\tModLoader\ModSources\DreamySoul\obj\Debug\net8.0\DreamySoul.pdb
 C:\Users\28499\Documents\My Games\Terraria\tModLoader\ModSources\DreamySoul\obj\Debug\net8.0\ref\DreamySoul.dll
+C:\Users\28499\Documents\My Games\Terraria\tModLoader\ModSources\DreamySoul\obj\Debug\net8.0\DreamySoul.sourcelink.json

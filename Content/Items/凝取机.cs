@@ -1,10 +1,7 @@
-using System.ComponentModel;
+using DreamySoul.Content.Tiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.Localization;
-using Terraria.DataStructures;
-using Terraria.ObjectData;
 
 namespace DreamySoul.Content.Items
 {
@@ -12,12 +9,16 @@ namespace DreamySoul.Content.Items
     {
         public override void SetDefaults()
         {
-            Item.width = 16;
-            Item.height = 16;
+            Item.width = 48;
+            Item.height = 32;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.useAnimation = 20;
-            Item.consumable = false;
+            Item.useTime = 20;
+            Item.useTurn = true;
+            Item.autoReuse = true;
+            Item.consumable = true;
             Item.maxStack = 9999;
+            Item.createTile = ModContent.TileType<凝取机方块>();
         }
         public override void AddRecipes()
         {

@@ -28,13 +28,14 @@ namespace DreamySoul.Content.Items
 
         public override void AddRecipes()
         {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.SoulofFlight);
+            Recipe recipe = CreateRecipe(3);
             recipe.AddIngredient(ItemID.SoulofLight);
             recipe.AddIngredient(ItemID.SoulofNight);
-            recipe.AddIngredient(ItemID.SoulofFright);
+            recipe.AddIngredient(ItemID.SoulofFlight);
             recipe.AddIngredient(ItemID.SoulofMight);
             recipe.AddIngredient(ItemID.SoulofSight);
+            recipe.AddIngredient(ItemID.SoulofFright);
+            recipe.AddTile(ModContent.TileType<global::DreamySoul.Content.Tiles.凝取机方块>());
             recipe.Register();
         }
     }

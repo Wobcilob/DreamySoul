@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DreamySoul")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abe9400757e75d206336cebdf543545498dba352")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+503ba0b0fdb084ca486536ea2880ce6554c5a1fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("DreamySoul")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DreamySoul")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

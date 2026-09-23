@@ -19,6 +19,11 @@ namespace DreamySoul.Content.GlobalNPCs
                     chanceDenominator: 1,
                     minimumDropped: 15,
                     maximumDropped: 20));
+                normalMode.OnSuccess(ItemDropRule.Common(
+                    ModContent.ItemType<叶绿精华>(),
+                    chanceDenominator: 1,
+                    minimumDropped: 3,
+                    maximumDropped: 5));
                 npcLoot.Add(normalMode);
             }
         }

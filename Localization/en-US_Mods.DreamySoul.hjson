@@ -40,6 +40,11 @@ Items: {
 		DisplayName: Test
 		Tooltip: ""
 	}
+
+	叶绿精华: {
+		DisplayName: 叶绿精华
+		Tooltip: ""
+	}
 }
 
 Projectiles: {

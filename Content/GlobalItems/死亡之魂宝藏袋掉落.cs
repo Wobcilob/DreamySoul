@@ -18,6 +18,11 @@ namespace DreamySoul.Content.GlobalItems
                     chanceDenominator: 1,
                     minimumDropped: 15,
                     maximumDropped: 20));
+                itemLoot.Add(ItemDropRule.Common(
+                    ModContent.ItemType<叶绿精华>(),
+                    chanceDenominator: 1,
+                    minimumDropped: 3,
+                    maximumDropped: 5));
             }
         }
     }

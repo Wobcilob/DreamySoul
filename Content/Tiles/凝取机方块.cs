@@ -8,9 +8,6 @@ namespace DreamySoul.Content.Tiles
 {
     public class 凝取机方块 : ModTile
     {
-        // 48×32 贴图对应横向 3 格、纵向 2 格。
-        public override string Texture => "DreamySoul/Content/Items/凝取机";
-
         public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
@@ -19,17 +16,30 @@ namespace DreamySoul.Content.Tiles
 
             TileObjectData.newTile.CopyFrom(TileObjectData.Style3x2);
             TileObjectData.newTile.Width = 3;
-            TileObjectData.newTile.Height = 2;
-            TileObjectData.newTile.Origin = new Terraria.DataStructures.Point16(1, 1);
+            TileObjectData.newTile.Height = 3;
+            TileObjectData.newTile.Origin = new Terraria.DataStructures.Point16(1, 2);
             TileObjectData.newTile.CoordinateWidth = 16;
-            TileObjectData.newTile.CoordinatePadding = 0;
-            TileObjectData.newTile.CoordinateHeights = new[] { 16, 16 };
+            TileObjectData.newTile.CoordinatePadding = 2;
+            TileObjectData.newTile.CoordinateHeights = new[] { 16, 16, 16 };
             TileObjectData.addTile(Type);
+
+            // 每个动画帧高 52 像素，共 6 帧纵向排列。
+            AnimationFrameHeight = 52;
 
             HitSound = SoundID.Tink;
             DustType = DustID.Iron;
             AddMapEntry(new Microsoft.Xna.Framework.Color(120, 120, 135));
             RegisterItemDrop(ModContent.ItemType<凝取机>());
+        }
+
+        public override void AnimateTile(ref int frame, ref int frameCounter)
+        {
+            frameCounter++;
+            if (frameCounter >= 8)
+            {
+                frameCounter = 0;
+                frame = (frame + 1) % 6;
+            }
         }
     }
 }

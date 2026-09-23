@@ -45,6 +45,21 @@ Items: {
 		DisplayName: 叶绿精华
 		Tooltip: ""
 	}
+
+	寒元锭: {
+		DisplayName: 寒元锭
+		Tooltip: ""
+	}
+
+	烁金锭: {
+		DisplayName: 烁金锭
+		Tooltip: ""
+	}
+
+	起源水晶球: {
+		DisplayName: 起源水晶球
+		Tooltip: ""
+	}
 }
 
 Projectiles: {

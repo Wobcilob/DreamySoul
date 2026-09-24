@@ -9,18 +9,19 @@ namespace DreamySoul.Content.Items
     {
         public override void SetStaticDefaults()
         {
-            // 6 帧竖排动画，每 5 Tick 切换一帧
-            Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(5, 6));
+            // 8 帧竖排动画，每 5 Tick 切换一帧。
+            Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(5, 8));
 
             // 使用原版灵魂在世界中的绘制效果，并像光明之魂一样悬浮。
             ItemID.Sets.AnimatesAsSoul[Type] = true;
+            ItemID.Sets.ItemIconPulse[Type] = true;
             ItemID.Sets.ItemNoGravity[Type] = true;
         }
 
         public override void SetDefaults()
         {
-            Item.width = 32;
-            Item.height = 32;
+            Item.width = 26;
+            Item.height = 26;
             Item.maxStack = 9999;
             Item.value = Item.sellPrice(0, 50, 2);
             Item.rare = ItemRarityID.LightPurple;

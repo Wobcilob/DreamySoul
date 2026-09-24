@@ -21,6 +21,7 @@ namespace DreamySoul.Content.Tiles
             TileObjectData.newTile.CoordinateWidth = 16;
             TileObjectData.newTile.CoordinatePadding = 2;
             TileObjectData.newTile.CoordinateHeights = new[] { 16, 16, 16 };
+            TileObjectData.newTile.DrawYOffset = 2;
             TileObjectData.addTile(Type);
 
             // 每个动画帧高 52 像素，共 6 帧纵向排列。

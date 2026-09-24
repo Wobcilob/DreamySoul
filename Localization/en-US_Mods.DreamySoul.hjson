@@ -60,7 +60,14 @@ Items: {
 		DisplayName: 起源水晶球
 		Tooltip: ""
 	}
+
+	硅孔雀石: {
+		DisplayName: 硅孔雀石
+		Tooltip: ""
+	}
 }
+
+Tiles.硅孔雀石矿.MapEntry: 硅孔雀石矿
 
 Projectiles: {
 	DeathSoulProjectile.DisplayName: Death Soul Projectile

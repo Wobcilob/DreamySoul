@@ -9,8 +9,8 @@ namespace DreamySoul.Content.Items
     {
         public override void SetDefaults()
         {
-            Item.width = 64;
-            Item.height = 64;
+            Item.width = 36;
+            Item.height = 38;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.useAnimation = 20;
             Item.useTime = 20;

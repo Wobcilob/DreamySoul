@@ -6,7 +6,11 @@ param(
     [string]$OutputDirectory,
 
     [Parameter(Mandatory = $true)]
-    [string]$BaseName
+    [string]$BaseName,
+
+    [switch]$OnlyAtlas,
+
+    [string]$AtlasFileName
 )
 
 $ErrorActionPreference = 'Stop'
@@ -172,8 +176,18 @@ $atlas = Convert-XnbTextureToBitmap $payload
 New-Item -ItemType Directory -Path $OutputDirectory -Force | Out-Null
 
 try {
-    $atlasPath = Join-Path $OutputDirectory "$BaseName`_原始图集.png"
+    if ([string]::IsNullOrWhiteSpace($AtlasFileName)) {
+        $AtlasFileName = "$BaseName`_原始图集.png"
+    }
+
+    $atlasPath = Join-Path $OutputDirectory $AtlasFileName
     $atlas.Save($atlasPath, [System.Drawing.Imaging.ImageFormat]::Png)
+
+    if ($OnlyAtlas) {
+        "Atlas=$($atlas.Width)x$($atlas.Height)"
+        "Output=$atlasPath"
+        return
+    }
 
     $positions = @(
         # 原版 TileFrame 对完整 3x3 连通矿块使用的九个帧位。

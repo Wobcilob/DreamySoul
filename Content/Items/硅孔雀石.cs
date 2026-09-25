@@ -8,8 +8,8 @@ namespace DreamySoul.Content.Items
     {
         public override void SetDefaults()
         {
-            Item.width = 18;
-            Item.height = 32;
+            Item.width = 16;
+            Item.height = 18;
             Item.maxStack = 9999;
             Item.value = Item.sellPrice(silver: 20);
             Item.rare = ItemRarityID.Green;

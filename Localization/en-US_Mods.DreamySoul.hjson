@@ -67,7 +67,10 @@ Items: {
 	}
 }
 
-Tiles.硅孔雀石矿.MapEntry: 硅孔雀石矿
+Tiles: {
+	硅孔雀石矿.MapEntry: 硅孔雀石矿
+	硅孔雀石晶体.MapEntry: 硅孔雀石晶体
+}
 
 Projectiles: {
 	DeathSoulProjectile.DisplayName: Death Soul Projectile

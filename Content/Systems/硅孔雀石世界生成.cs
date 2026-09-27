@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using DreamySoul.Content.Tiles;
+using DreamySoul.Content.Walls;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.GameContent.Generation;
@@ -63,6 +64,7 @@ namespace DreamySoul.Content.Systems
 
             ushort oreTileType = (ushort)ModContent.TileType<硅孔雀石矿>();
             ushort crystalTileType = (ushort)ModContent.TileType<硅孔雀石晶体>();
+            ushort caveWallType = (ushort)ModContent.WallType<硅孔雀石洞墙>();
             int minimumY = (int)Main.worldSurface;
             bool[,] visited = new bool[Main.maxTilesX, Main.maxTilesY];
             Queue<Point> pending = new Queue<Point>();
@@ -79,7 +81,7 @@ namespace DreamySoul.Content.Systems
 
                     int gemWallMask = CollectGemCave(x, y, visited, pending, caveTiles);
                     if (gemWallMask == 0b11_1111)
-                        PopulateAllGemCave(caveTiles, oreTileType, crystalTileType);
+                        PopulateAllGemCave(caveTiles, oreTileType, crystalTileType, caveWallType);
                 }
             }
         }
@@ -129,13 +131,19 @@ namespace DreamySoul.Content.Systems
         private static void PopulateAllGemCave(
             List<Point> caveTiles,
             ushort oreTileType,
-            ushort crystalTileType)
+            ushort crystalTileType,
+            ushort caveWallType)
         {
             HashSet<Point> oreCandidates = new HashSet<Point>();
 
             foreach (Point point in caveTiles)
             {
                 Tile tile = Main.tile[point.X, point.Y];
+
+                // 全宝石洞中七种宝石墙等份：将原有六种墙的 1/7
+                // 替换为硅孔雀石墙后，每种墙的最终平均占比均为 1/7。
+                if (WorldGen.genRand.NextBool(7))
+                    tile.WallType = caveWallType;
 
                 // 原版已占用约一半可放置位置；在剩余空位中使用 1/6，
                 // 使硅孔雀石晶体的最终份额与单种原版宝石晶体一致。

@@ -65,6 +65,130 @@ Items: {
 		DisplayName: 硅孔雀石
 		Tooltip: ""
 	}
+
+	硅孔雀石法杖: {
+		DisplayName: 硅孔雀石法杖
+		Tooltip: ""
+	}
+
+	硅孔雀石钩爪: {
+		DisplayName: 硅孔雀石钩爪
+		Tooltip: ""
+	}
+
+	硅孔雀石相位刃: {
+		DisplayName: 硅孔雀石相位刃
+		Tooltip: ""
+	}
+
+	硅孔雀石相位剑: {
+		DisplayName: 硅孔雀石相位剑
+		Tooltip: ""
+	}
+
+	硅孔雀石长袍: {
+		DisplayName: 硅孔雀石长袍
+		Tooltip: ""
+	}
+
+	洁净水晶: {
+		DisplayName: 洁净水晶
+		Tooltip: ""
+	}
+
+	毒腺: {
+		DisplayName: 毒腺
+		Tooltip: ""
+	}
+
+	外骨骼: {
+		DisplayName: 外骨骼
+		Tooltip: ""
+	}
+
+	暗影鲨牙项链: {
+		DisplayName: 暗影鲨牙项链
+		Tooltip:
+			'''
+			穿透10点敌人防御
+			攻击会对敌人施加3秒暗影焰
+			'''
+	}
+
+	复生冰晶: {
+		DisplayName: 复生冰晶
+		Tooltip:
+			'''
+			受到致命伤时自动消耗原版治疗药水并重生
+			重生生命为药水治疗量与受伤前生命值30%的总和
+			重生后获得7秒结晶再生
+			该效果每3分30秒只能触发一次
+			受伤后的无敌时间延长1秒
+			'''
+	}
+
+	日耀纹章: {
+		DisplayName: 日耀纹章
+		Tooltip:
+			'''
+			最终近战伤害提高15%
+			近战暴击率提高8%
+			近战攻击速度提高20%
+			'''
+	}
+
+	星尘纹章: {
+		DisplayName: 星尘纹章
+		Tooltip:
+			'''
+			最终召唤伤害提高15%
+			基础召唤暴击率提高5%
+			仆从栏增加1个
+			'''
+	}
+
+	星璇纹章: {
+		DisplayName: 星璇纹章
+		Tooltip:
+			'''
+			最终远程伤害提高15%
+			远程暴击率提高12%
+			25%概率不消耗弹药
+			'''
+	}
+
+	星云纹章: {
+		DisplayName: 星云纹章
+		Tooltip:
+			'''
+			最终魔法伤害提高15%
+			魔法暴击率提高8%
+			魔力消耗降低25%
+			'''
+	}
+
+	再生护符: {
+		DisplayName: 再生护符
+		Tooltip:
+			'''
+			受到致命伤时自动消耗原版治疗药水并重生
+			重生生命等于该药水的治疗量
+			重生后获得5秒光合作用
+			该效果每3分钟只能触发一次
+			受伤后的无敌时间延长2/3秒
+			'''
+	}
+
+	再生徽章: {
+		DisplayName: 再生徽章
+		Tooltip:
+			'''
+			受到致命伤时自动消耗原版治疗药水并重生
+			重生生命等于该药水的治疗量
+			耐药性会根据已有剩余时间与所用药水冷却延长
+			该效果每3分钟只能触发一次
+			'''
+	}
 }
 
 Tiles: {
@@ -72,7 +196,23 @@ Tiles: {
 	硅孔雀石晶体.MapEntry: 硅孔雀石晶体
 }
 
+Walls.硅孔雀石洞墙.MapEntry: 硅孔雀石洞墙
+
+Buffs: {
+	结晶再生: {
+		DisplayName: 结晶再生
+		Description: 生命再生提高，防御提高，受到的元素系伤害降低
+	}
+
+	光合作用: {
+		DisplayName: 光合作用
+		Description: 生命再生提高
+	}
+}
+
 Projectiles: {
 	DeathSoulProjectile.DisplayName: Death Soul Projectile
 	合金短刀刺击.DisplayName: 合金短刀刺击
+	硅孔雀石法杖弹幕.DisplayName: 硅孔雀石法杖弹幕
+	硅孔雀石钩爪弹幕.DisplayName: 硅孔雀石钩爪弹幕
 }

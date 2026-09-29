@@ -10,6 +10,38 @@ namespace DreamySoul.Content.GlobalNPCs
     {
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
         {
+            if (npc.type == NPCID.BloodNautilus)
+            {
+                npcLoot.Add(ItemDropRule.Common(
+                    ModContent.ItemType<血晶>(),
+                    chanceDenominator: 1,
+                    minimumDropped: 1,
+                    maximumDropped: 1));
+            }
+
+            if (IsBloodMoonFishingEnemy(npc.type))
+            {
+                npcLoot.Add(ItemDropRule.Common(
+                    ModContent.ItemType<血晶碎片>(),
+                    chanceDenominator: 1,
+                    minimumDropped: 1,
+                    maximumDropped: 1));
+            }
+
+            if (npc.type == NPCID.FireImp)
+            {
+                npcLoot.Add(ItemDropRule.Common(
+                    ModContent.ItemType<赤炎碎片>(),
+                    chanceDenominator: 1,
+                    minimumDropped: 1,
+                    maximumDropped: 1));
+                npcLoot.Add(ItemDropRule.Common(
+                    ModContent.ItemType<改良型火焰喷管>(),
+                    chanceDenominator: 1,
+                    minimumDropped: 1,
+                    maximumDropped: 1));
+            }
+
             if (IsHornetOrSpider(npc.type))
             {
                 npcLoot.Add(ItemDropRule.Common(
@@ -44,6 +76,15 @@ namespace DreamySoul.Content.GlobalNPCs
                 || npcType == NPCID.JungleCreeperWall
                 || npcType == NPCID.BlackRecluse
                 || npcType == NPCID.BlackRecluseWall;
+        }
+
+        private static bool IsBloodMoonFishingEnemy(int npcType)
+        {
+            // 恐惧鹦鹉螺（BloodNautilus）按要求排除；血鳗仅由头部结算掉落。
+            return npcType == NPCID.ZombieMerman
+                || npcType == NPCID.EyeballFlyingFish
+                || npcType == NPCID.GoblinShark
+                || npcType == NPCID.BloodEelHead;
         }
     }
 }

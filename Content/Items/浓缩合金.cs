@@ -26,8 +26,8 @@ namespace DreamySoul.Content.Items
             recipe.AddRecipeGroup("DreamySoul:AnyMythrilOrichalcum", 5);
             recipe.AddRecipeGroup("DreamySoul:AnyAdamantiteTitanium", 5);
             recipe.AddIngredient(ItemID.ChlorophyteBar, 5);
-            recipe.Register();
             recipe.AddTile(TileID.AdamantiteForge);
+            recipe.Register();
         }
     }
 }

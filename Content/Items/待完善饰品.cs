@@ -37,13 +37,9 @@ namespace DreamySoul.Content.Items
 
         public override void AddRecipes()
         {
-            // “暗影焰”并非原版材料；在该模组物品加入后自动启用完整配方。
-            if (!Mod.TryFind("暗影焰", out ModItem shadowFlameMaterial))
-                return;
-
             CreateRecipe()
                 .AddIngredient(ItemID.SharkToothNecklace)
-                .AddIngredient(shadowFlameMaterial.Type, 5)
+                .AddIngredient<暗影焰>(5)
                 .AddIngredient(ItemID.SoulofNight, 12)
                 .AddTile(TileID.TinkerersWorkbench)
                 .Register();

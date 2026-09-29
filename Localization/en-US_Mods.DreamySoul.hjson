@@ -106,6 +106,31 @@ Items: {
 		Tooltip: ""
 	}
 
+	暗影焰: {
+		DisplayName: 暗影焰
+		Tooltip: 或许你能在别的什么地方看见它
+	}
+
+	赤炎碎片: {
+		DisplayName: 赤炎碎片
+		Tooltip: ""
+	}
+
+	血晶碎片: {
+		DisplayName: 血晶碎片
+		Tooltip: ""
+	}
+
+	血晶: {
+		DisplayName: 血晶
+		Tooltip: ""
+	}
+
+	改良型火焰喷管: {
+		DisplayName: 改良型火焰喷管
+		Tooltip: ""
+	}
+
 	暗影鲨牙项链: {
 		DisplayName: 暗影鲨牙项链
 		Tooltip:

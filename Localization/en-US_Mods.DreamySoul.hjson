@@ -131,6 +131,16 @@ Items: {
 		Tooltip: ""
 	}
 
+	重力果: {
+		DisplayName: 重力果
+		Tooltip: ""
+	}
+
+	重力草种子: {
+		DisplayName: 重力草种子
+		Tooltip: ""
+	}
+
 	暗影鲨牙项链: {
 		DisplayName: 暗影鲨牙项链
 		Tooltip:
@@ -219,6 +229,7 @@ Items: {
 Tiles: {
 	硅孔雀石矿.MapEntry: 硅孔雀石矿
 	硅孔雀石晶体.MapEntry: 硅孔雀石晶体
+	重力草.MapEntry: 重力草
 }
 
 Walls.硅孔雀石洞墙.MapEntry: 硅孔雀石洞墙
